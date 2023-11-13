@@ -1,0 +1,433 @@
+  const API_KEY="47de2b9e8b2462b53975d18185ac40bf";
+
+const requests = {
+    fetchTrending:`/trending/all/week?api_key=${APIKEY}&language=en-US`,
+    fetchNetflixOriginals:`/discover/tv?api_key=${APIKEY}&with_networks=213`,
+    fetchTopRated:`/movie/top_rated?api_key=${APIKEY}&language=en-US`,
+    fetchActionMovies:`/discover/movie?api_key=${APIKEY}&with_genres=28`,
+    fetchComedyMovies:`/discover/movie?api_key=${APIKEY}&with_genres=35`,
+    fetchHorrorMovies:`/discover/movie?api_key=${APIKEY}&with_genres=27`,
+    fetchRomanceMovies:`/discover/movie?api_key=${APIKEY}&with_genres=10749`,
+    fetchDocumentaries:`/discover/movie?api_key=${APIKEY}&with_genres=99`,
+}
+
+  baseURL: "https://api.themoviedb.org/3",
+
+  const base_url = "https://image.tmdb.org/t/p/original/";
+
+
+
+[
+    {
+        "backdrop_path": "/aDBRtunw49UF4XmqfyNuD9nlYIu.jpg",
+        "first_air_date": "2016-01-25",
+        "genre_ids": [
+            80,
+            10765
+        ],
+        "id": 63174,
+        "name": "Lucifer",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Lucifer",
+        "overview": "Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles, where he has teamed up with LAPD detective Chloe Decker to take down criminals. But the longer he's away from the underworld, the greater the threat that the worst of humanity could escape.",
+        "popularity": 702.07,
+        "poster_path": "/ekZobS8isE6mA53RAiGDG93hBxL.jpg",
+        "vote_average": 8.5,
+        "vote_count": 13949
+    },
+    {
+        "backdrop_path": "/aWnEtYJn31swY2pC8cOtje98bYc.jpg",
+        "first_air_date": "2016-11-04",
+        "genre_ids": [
+            18
+        ],
+        "id": 65494,
+        "name": "The Crown",
+        "origin_country": [
+            "GB",
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Crown",
+        "overview": "The gripping, decades-spanning inside story of Her Majesty Queen Elizabeth II and the Prime Ministers who shaped Britain's post-war destiny. \n\nThe Crown tells the inside story of two of the most famous addresses in the world – Buckingham Palace and 10 Downing Street – and the intrigues, love lives and machinations behind the great events that shaped the second half of the 20th century. Two houses, two courts, one Crown.",
+        "popularity": 392.017,
+        "poster_path": "/1M876KPjulVwppEpldhdc8V4o68.jpg",
+        "vote_average": 8.2,
+        "vote_count": 1825
+    },
+    {
+        "backdrop_path": "/AmIHaw6CQWOfBCQYom15Jzsu7OB.jpg",
+        "first_air_date": "2014-08-22",
+        "genre_ids": [
+            16,
+            35,
+            18
+        ],
+        "id": 61222,
+        "name": "BoJack Horseman",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "BoJack Horseman",
+        "overview": "Meet the most beloved sitcom horse of the 90s - 20 years later. BoJack Horseman was the star of the hit TV show \"Horsin' Around,\" but today he's washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters.",
+        "popularity": 381.439,
+        "poster_path": "/6JFWzlChcGgLiIUo2COgNlWGFKy.jpg",
+        "vote_average": 8.6,
+        "vote_count": 2119
+    },
+    {
+        "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+        "first_air_date": "2016-07-15",
+        "genre_ids": [
+            18,
+            10765,
+            9648
+        ],
+        "id": 66732,
+        "name": "Stranger Things",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Stranger Things",
+        "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+        "popularity": 347.001,
+        "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+        "vote_average": 8.6,
+        "vote_count": 16306
+    },
+    {
+        "backdrop_path": "/nh3n0jQeS0FgWH84kzyc8q5yLEp.jpg",
+        "first_air_date": "2012-06-03",
+        "genre_ids": [
+            37,
+            80,
+            18
+        ],
+        "id": 43901,
+        "name": "Longmire",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Longmire",
+        "overview": "A Wyoming sheriff rebuilds his life and career following the death of his wife. Based on the “Walt Longmire” series of mystery novels written by best-selling author Craig Johnson.",
+        "popularity": 344.754,
+        "poster_path": "/yrdt5lscyJ5j5GSbhl99x3SRN66.jpg",
+        "vote_average": 7.7,
+        "vote_count": 242
+    },
+    {
+        "backdrop_path": "/nzDvr0AkXWTHgvSRVgUVosKVgOh.jpg",
+        "first_air_date": "2015-03-06",
+        "genre_ids": [
+            35
+        ],
+        "id": 61671,
+        "name": "Unbreakable Kimmy Schmidt",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Unbreakable Kimmy Schmidt",
+        "overview": "When a woman is rescued from a doomsday cult and lands in New York City, she must navigate a world she didn’t think even existed anymore.",
+        "popularity": 262.826,
+        "poster_path": "/eMFHl0HyLg7k04OVeE4xPvT6XhY.jpg",
+        "vote_average": 7.2,
+        "vote_count": 465
+    },
+    {
+        "backdrop_path": "/foGkPxpw9h8zln81j63mix5B7m8.jpg",
+        "first_air_date": "2019-12-20",
+        "genre_ids": [
+            18,
+            10759,
+            10765
+        ],
+        "id": 71912,
+        "name": "The Witcher",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Witcher",
+        "overview": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+        "popularity": 314.726,
+        "poster_path": "/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg",
+        "vote_average": 8.1,
+        "vote_count": 5234
+    },
+    {
+        "backdrop_path": "/oGkh6ByqaSKXlW6SkIOBXJWvLan.jpg",
+        "first_air_date": "2023-11-03",
+        "genre_ids": [
+            10759,
+            16,
+            18
+        ],
+        "id": 225180,
+        "name": "BLUE EYE SAMURAI",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "BLUE EYE SAMURAI",
+        "overview": "Driven by a dream of revenge against those who made her an outcast in Edo-period Japan, a young warrior cuts a bloody path toward her destiny.",
+        "popularity": 338.609,
+        "poster_path": "/fXm3JT4WLQVnwukdvghtAblc1wc.jpg",
+        "vote_average": 8.7,
+        "vote_count": 28
+    },
+    {
+        "backdrop_path": "/m6eRgkR1KC6Mr6gKx6gKCzSn6vD.jpg",
+        "first_air_date": "2008-10-03",
+        "genre_ids": [
+            10759,
+            16,
+            10765
+        ],
+        "id": 4194,
+        "name": "Star Wars: The Clone Wars",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Star Wars: The Clone Wars",
+        "overview": "Yoda, Obi-Wan Kenobi, Anakin Skywalker, Mace Windu and other Jedi Knights lead the Grand Army of the Republic against the droid army of the Separatists.",
+        "popularity": 325.603,
+        "poster_path": "/e1nWfnnCVqxS2LeTO3dwGyAsG2V.jpg",
+        "vote_average": 8.5,
+        "vote_count": 1797
+    },
+    {
+        "backdrop_path": "/2PrYnQR8YPei5vCVRwJXnwMqMyR.jpg",
+        "first_air_date": "2015-04-10",
+        "genre_ids": [
+            80,
+            18,
+            10759
+        ],
+        "id": 61889,
+        "name": "Marvel's Daredevil",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Marvel's Daredevil",
+        "overview": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
+        "popularity": 238.652,
+        "poster_path": "/p7oImOiZAUF4DCreZuE11hWJRyA.jpg",
+        "vote_average": 8.2,
+        "vote_count": 4084
+    },
+    {
+        "backdrop_path": "/wZMY9X8jtSS5GXFue2lvhgaJkii.jpg",
+        "first_air_date": "2011-12-04",
+        "genre_ids": [
+            10765,
+            18,
+            9648
+        ],
+        "id": 42009,
+        "name": "Black Mirror",
+        "origin_country": [
+            "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Black Mirror",
+        "overview": "Over the last ten years, technology has transformed almost every aspect of our lives before we've had time to stop and question it. In every home; on every desk; in every palm - a plasma screen; a monitor; a smartphone - a black mirror of our 21st Century existence.",
+        "popularity": 321.975,
+        "poster_path": "/5UaYsGZOFhjFDwQh6GuLjjA1WlF.jpg",
+        "vote_average": 8.3,
+        "vote_count": 4452
+    },
+    {
+        "backdrop_path": "/fjEOQhzZk2Or7VYUBeMx5ZIwU95.jpg",
+        "first_air_date": "2015-11-20",
+        "genre_ids": [
+            10765,
+            18
+        ],
+        "id": 38472,
+        "name": "Marvel's Jessica Jones",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Marvel's Jessica Jones",
+        "overview": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
+        "popularity": 230.401,
+        "poster_path": "/paf9wL3mOW9LT3ZjRxXqJcjeMEv.jpg",
+        "vote_average": 7.5,
+        "vote_count": 2077
+    },
+    {
+        "backdrop_path": "/zCTLW4s4Cm2DfBfaIDBB1XDzqsU.jpg",
+        "first_air_date": "2015-12-24",
+        "genre_ids": [
+            16,
+            10751,
+            10762,
+            35,
+            10759
+        ],
+        "id": 64783,
+        "name": "Dawn of the Croods",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Dawn of the Croods",
+        "overview": "The world's first family is back for more laughs as they discover sports, sleepovers and other wonders in a world of exotic creatures and adventures. This 2D animated cartoon is based on the 3D animated feature film, \"The Croods\".",
+        "popularity": 230.342,
+        "poster_path": "/cyCAsMLGECvEAFDfKcxcWy7YTOW.jpg",
+        "vote_average": 7.4,
+        "vote_count": 87
+    },
+    {
+        "backdrop_path": "/tl0mg7lOnS6tP8ngH0QwgMLQdpV.jpg",
+        "first_air_date": "2018-10-05",
+        "genre_ids": [
+            80,
+            9648,
+            18
+        ],
+        "id": 76669,
+        "name": "Elite",
+        "origin_country": [
+            "ES"
+        ],
+        "original_language": "es",
+        "original_name": "Élite",
+        "overview": "When three working class kids enroll in the most exclusive school in Spain, the clash between the wealthy and the poor students leads to tragedy.",
+        "popularity": 350.203,
+        "poster_path": "/3NTAbAiao4JLzFQw6YxP1YZppM8.jpg",
+        "vote_average": 8.1,
+        "vote_count": 8864
+    },
+    {
+        "backdrop_path": "/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg",
+        "first_air_date": "2018-05-02",
+        "genre_ids": [
+            10759,
+            18,
+            35
+        ],
+        "id": 77169,
+        "name": "Cobra Kai",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Cobra Kai",
+        "overview": "This Karate Kid sequel series picks up 30 years after the events of the 1984 All Valley Karate Tournament and finds Johnny Lawrence on the hunt for redemption by reopening the infamous Cobra Kai karate dojo. This reignites his old rivalry with the successful Daniel LaRusso, who has been working to maintain the balance in his life without mentor Mr. Miyagi.",
+        "popularity": 251.018,
+        "poster_path": "/m7tG5E1EbywuwTsl6hq990So0Bx.jpg",
+        "vote_average": 8.2,
+        "vote_count": 5771
+    },
+    {
+        "backdrop_path": "/z8Mg3YVZGd1iSnoDinEAoh9WTck.jpg",
+        "first_air_date": "2013-07-11",
+        "genre_ids": [
+            35,
+            18
+        ],
+        "id": 1424,
+        "name": "Orange Is the New Black",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Orange Is the New Black",
+        "overview": "A crime she committed in her youthful past sends Piper Chapman to a women's prison, where she trades her comfortable New York life for one of unexpected camaraderie and conflict in an eccentric group of fellow inmates.",
+        "popularity": 312.533,
+        "poster_path": "/ekaa7YjGPTkFLcPhwWXTnARuCEU.jpg",
+        "vote_average": 7.7,
+        "vote_count": 2236
+    },
+    {
+        "backdrop_path": "/nBrkOZyI75artyizuBFeya48KbO.jpg",
+        "first_air_date": "2019-03-15",
+        "genre_ids": [
+            16,
+            10765
+        ],
+        "id": 86831,
+        "name": "Love, Death & Robots",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Love, Death & Robots",
+        "overview": "Terrifying creatures, wicked surprises and dark comedy converge in this NSFW anthology of animated stories presented by Tim Miller and David Fincher.",
+        "popularity": 232.667,
+        "poster_path": "/cRiDlzzZC5lL7fvImuSjs04SUIJ.jpg",
+        "vote_average": 8.3,
+        "vote_count": 2849
+    },
+    {
+        "backdrop_path": "/8UVzqlBMG3azowsi7f8lqZwhcBZ.jpg",
+        "first_air_date": "2016-09-21",
+        "genre_ids": [
+            18,
+            10768
+        ],
+        "id": 67026,
+        "name": "Designated Survivor",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Designated Survivor",
+        "overview": "Tom Kirkman, a low-level cabinet member is suddenly appointed President of the United States after a catastrophic attack during the State of the Union kills everyone above him in the Presidential line of succession.",
+        "popularity": 210.074,
+        "poster_path": "/5R125JAIh1N38pzHp2dRsBpOVNY.jpg",
+        "vote_average": 7.2,
+        "vote_count": 829
+    },
+    {
+        "backdrop_path": "/wPNBOUMxSWKysHxQW4Q1hC99L4k.jpg",
+        "first_air_date": "2016-05-11",
+        "genre_ids": [
+            10767
+        ],
+        "id": 66488,
+        "name": "Chelsea",
+        "origin_country": [
+            "US"
+        ],
+        "original_language": "en",
+        "original_name": "Chelsea",
+        "overview": "It's not her first talk show, but it is a first of its kind. Ideas, people and places that fascinate her, all in her unique style.",
+        "popularity": 205.052,
+        "poster_path": "/lDbyyKRDk5FmDY98eCc97gUEZod.jpg",
+        "vote_average": 5.2,
+        "vote_count": 55
+    },
+    {
+        "backdrop_path": "/9JcBVJO5wXbja2JD8XESnJ1Kify.jpg",
+        "first_air_date": "2021-01-08",
+        "genre_ids": [
+            80,
+            18,
+            9648
+        ],
+        "id": 96677,
+        "name": "Lupin",
+        "origin_country": [
+            "FR"
+        ],
+        "original_language": "fr",
+        "original_name": "Lupin",
+        "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+        "popularity": 279.08,
+        "poster_path": "/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
+        "vote_average": 7.8,
+        "vote_count": 1948
+    }
+]
